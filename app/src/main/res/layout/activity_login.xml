@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="350dp"
+        android:src="@drawable/image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="#000"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:letterSpacing="0.03"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/forget"
+        android:hint="Email"
+        android:textColor="#000"
+        android:fontFamily="@font/roboto_light"
+        android:inputType="textEmailAddress"
+        android:id="@+id/lemail"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/forget"
+        android:hint="Password"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="#000"
+        android:inputType="textPassword"
+        android:textStyle="bold"
+        android:id="@+id/lpassword"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:fontFamily="@font/roboto_light"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="35dp"/>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:text="Login"
+        android:textSize="18dp"
+        android:id="@+id/login"
+        android:fontFamily="@font/roboto_bold"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Sign Up"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:fontFamily="@font/roboto_bold"
+        android:onClick="toregister"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>
