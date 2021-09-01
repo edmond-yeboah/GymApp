@@ -1,22 +1,33 @@
 package com.example.gym;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
     private String email;
     private String password;
-    private String fullname;
-    private String age;
+    private String fname;
+    private String lname;
+    private String bmi;
+    private String phone;
+    private String Key;
+    private String level;
+    private String choice;
+    private String gender;
 
     public User() {
     }
 
-    public User(String email, String password, String fullname, String age) {
+    public User(String email, String password, String fname, String lname, String bmi, String phone, String key, String level, String choice, String gender) {
         this.email = email;
         this.password = password;
-        this.fullname = fullname;
-        this.age = age;
-    }
-
-    public User(String useremail, String userpassword) {
+        this.fname = fname;
+        this.lname = lname;
+        this.bmi = bmi;
+        this.phone = phone;
+        this.Key = key;
+        this.level = level;
+        this.choice = choice;
+        this.gender = gender;
     }
 
     public String getEmail() {
@@ -35,19 +46,67 @@ public class User {
         this.password = password;
     }
 
-    public String getFullname() {
-        return fullname;
+    public String getFname() {
+        return fname;
     }
 
-    public void setFullname(String fullname) {
-        this.fullname = fullname;
+    public void setFname(String fname) {
+        this.fname = fname;
     }
 
-    public String getAge() {
-        return age;
+    public String getLname() {
+        return lname;
     }
 
-    public void setAge(String age) {
-        this.age = age;
+    public void setLname(String lname) {
+        this.lname = lname;
+    }
+
+    public String getBmi() {
+        return bmi;
+    }
+
+    public void setBmi(String bmi) {
+        this.bmi = bmi;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getKey() {
+        return Key;
+    }
+
+    public void setKey(String key) {
+        this.Key = key;
+    }
+
+    public String getLevel() {
+        return level;
+    }
+
+    public void setLevel(String level) {
+        this.level = level;
+    }
+
+    public String getChoice() {
+        return choice;
+    }
+
+    public void setChoice(String choice) {
+        this.choice = choice;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 }

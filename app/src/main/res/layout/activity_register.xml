@@ -3,26 +3,33 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center_horizontal">
 
-    <ImageView
-        android:layout_width="500dp"
-        android:layout_height="350dp"
-        android:src="@drawable/image"/>
+<!--    <ImageView-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:src="@drawable/exercise"/>-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        android:fontFamily="@font/roboto_bold"
-        android:textColor="#000"
-        android:textSize="35dp"
-        android:textStyle="bold"
-        android:letterSpacing="0.03"/>
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Register"-->
+<!--        android:fontFamily="@font/roboto_bold"-->
+<!--        android:textColor="#000"-->
+<!--        android:textSize="35dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:letterSpacing="0.03"/>-->
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:src="@drawable/splash1"/>
 
     <EditText
-        android:layout_width="350dp"
+        android:layout_width="260dp"
         android:layout_height="45dp"
         android:inputType="textEmailAddress"
         android:id="@+id/email"
@@ -36,7 +43,7 @@
         android:paddingLeft="20dp"/>
 
     <EditText
-        android:layout_width="350dp"
+        android:layout_width="260dp"
         android:layout_height="45dp"
         android:background="@drawable/forget"
         android:hint="Password"
@@ -47,10 +54,10 @@
         android:id="@+id/password"
         android:textSize="18dp"
         android:layout_marginTop="20dp"
-        android:paddingLeft="20dp"/>
+        android:paddingLeft="15dp"/>
 
     <EditText
-        android:layout_width="350dp"
+        android:layout_width="260dp"
         android:layout_height="45dp"
         android:background="@drawable/forget"
         android:hint="Confirm Password"
@@ -61,13 +68,13 @@
         android:inputType="textPassword"
         android:textSize="18dp"
         android:layout_marginTop="20dp"
-        android:paddingLeft="20dp"/>
+        android:paddingLeft="15dp"/>
 
     <Button
-        android:layout_width="350dp"
+        android:layout_width="260dp"
         android:layout_height="50dp"
         android:background="@drawable/button"
-        android:text="Register"
+        android:text="Sign Up"
         android:textSize="18dp"
         android:id="@+id/btnregister"
         android:fontFamily="@font/roboto_bold"
@@ -80,10 +87,20 @@
         android:layout_height="wrap_content"
         android:text="Already have an account? Sign In"
         android:textColor="#000"
-        android:fontFamily="@font/roboto_bold"
-        android:textStyle="bold"
+        android:fontFamily="@font/roboto_light"
+        android:textStyle="normal"
         android:textSize="18dp"
         android:onClick="tologin"
         android:layout_marginTop="15dp"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/registeravi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        app:indicatorName="BallPulseIndicator"
+        app:indicatorColor="@color/black"
+        />
 
 </LinearLayout>

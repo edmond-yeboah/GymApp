@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectedUser">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/black"
+        android:id="@+id/toolbar">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:onClick="dashboard"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Selected Customer"
+            android:textSize="18dp"
+            android:layout_gravity="center"/>
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/selectedUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="user"/>
+
+</RelativeLayout>
