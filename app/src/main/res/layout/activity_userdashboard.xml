@@ -315,11 +315,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="topayment"
         android:layout_marginTop="34dp">
 
         <ImageView
             android:id="@+id/icon_sh"
             android:layout_width="25dp"
+            android:onClick="topayment"
             android:layout_height="25dp"
             android:src="@drawable/wallet">
 
@@ -331,6 +333,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="16dp"
             android:layout_toRightOf="@id/icon_sh"
+            android:onClick="topayment"
             android:text="Payment"
             android:textColor="#202020"
             android:textSize="20dp"></TextView>
@@ -338,6 +341,7 @@
         <ImageView
             android:layout_width="16dp"
             android:layout_height="16dp"
+            android:onClick="topayment"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:src="@drawable/arrow_dark">

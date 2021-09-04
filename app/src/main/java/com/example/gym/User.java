@@ -14,6 +14,8 @@ public class User implements Serializable {
     private String choice;
     private String gender;
 
+
+
     public User() {
     }
 
@@ -28,6 +30,7 @@ public class User implements Serializable {
         this.level = level;
         this.choice = choice;
         this.gender = gender;
+
     }
 
     public String getEmail() {
@@ -109,4 +112,5 @@ public class User implements Serializable {
     public void setGender(String gender) {
         this.gender = gender;
     }
+
 }

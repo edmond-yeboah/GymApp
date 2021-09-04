@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gym">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/splash1"
@@ -9,7 +11,8 @@
         android:roundIcon="@drawable/splash1"
         android:supportsRtl="true"
         android:theme="@style/Theme.Gym">
-        <activity android:name=".exercisedetails"></activity>
+        <activity android:name=".payment"></activity>
+        <activity android:name=".exercisedetails" />
         <activity android:name=".creatingprofile" />
         <activity android:name=".RegChoice" />
         <activity android:name=".RegExercise" />

@@ -20,7 +20,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class UserDashboard extends AppCompatActivity {
    private FirebaseAuth mAuth;
-   private String email;
+   private String email,key;
    private TextView username,tel,mybmi;
    private User user;
 
@@ -40,6 +40,7 @@ public class UserDashboard extends AppCompatActivity {
         FirebaseUser currentuser = mAuth.getCurrentUser();
         if (currentuser != null){
             email = currentuser.getEmail();
+           // key = currentuser.getIdToken();
         }
 
 
@@ -51,8 +52,10 @@ public class UserDashboard extends AppCompatActivity {
                 for (DataSnapshot ds: snapshot.getChildren()){
                     user = ds.getValue(User.class);
                 }
+                //key = user.getKey();
 
                 if (user !=null){
+                    key=user.getKey();
                     //setting user first name and last name if available else set email
                     if (TextUtils.isEmpty(user.getFname()) && TextUtils.isEmpty(user.getLname())){
                         username.setText(email);
@@ -101,6 +104,16 @@ public class UserDashboard extends AppCompatActivity {
 
     public void profile(View view) {
         Intent intent = new Intent(UserDashboard.this,profile.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.enter_from_right,R.anim.exit_through_right);
+        finish();
+    }
+
+    public void topayment(View view) {
+        Bundle bundle = new Bundle();
+        bundle.putString("email",email);
+        Intent intent = new Intent(UserDashboard.this,payment.class);
+        intent.putExtras(bundle);
         startActivity(intent);
         overridePendingTransition(R.anim.enter_from_right,R.anim.exit_through_right);
         finish();
