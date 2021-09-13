@@ -16,7 +16,8 @@
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"
             android:layout_marginLeft="20dp"
             android:onClick="dashboard"
             android:src="@drawable/ic_baseline_arrow_back_24"/>
@@ -42,14 +43,14 @@
 <!--            android:textColor="@color/white"-->
 <!--            android:textSize="14sp" />-->
 
-        <ImageView
-            android:layout_width="52dp"
-            android:layout_marginBottom="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_height="52dp"
-            android:layout_marginRight="20dp"
-            android:layout_alignParentEnd="true"
-            android:src="@drawable/profile" />
+<!--        <ImageView-->
+<!--            android:layout_width="52dp"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_height="52dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:src="@drawable/profile" />-->
 
     </RelativeLayout>
 

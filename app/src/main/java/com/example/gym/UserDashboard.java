@@ -118,4 +118,11 @@ public class UserDashboard extends AppCompatActivity {
         overridePendingTransition(R.anim.enter_from_right,R.anim.exit_through_right);
         finish();
     }
+
+    public void exercise(View view) {
+        Intent intent = new Intent(UserDashboard.this,UserExercise.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.enter_from_right,R.anim.exit_through_right);
+        finish();
+    }
 }
