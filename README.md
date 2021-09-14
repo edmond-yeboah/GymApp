@@ -13,3 +13,10 @@ An android app for gym management that allows clients to do workouts that the ad
 ![Screenshot_2021-09-14-16-52-21~2](https://user-images.githubusercontent.com/38086894/133303929-6016d5ad-3cbd-42f6-b176-b7343f0e29af.png)
 # Customer dashboard
 
+![Screenshot_2021-09-14-16-52-31~2](https://user-images.githubusercontent.com/38086894/133304239-704e39e8-6839-4642-8ee7-ff3f3171fbfd.png)
+# Exercise activity
+
+![Screenshot_2021-09-14-16-52-58~2](https://user-images.githubusercontent.com/38086894/133304256-3827a75c-7c87-46bf-91ef-d386b7f8a72e.png)
+#Payment Activity
+
+
