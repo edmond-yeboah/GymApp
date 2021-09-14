@@ -17,6 +17,6 @@ An android app for gym management that allows clients to do workouts that the ad
 # Exercise activity
 
 ![Screenshot_2021-09-14-16-52-58~2](https://user-images.githubusercontent.com/38086894/133304256-3827a75c-7c87-46bf-91ef-d386b7f8a72e.png)
-#Payment Activity
+# Payment Activity
 
 
