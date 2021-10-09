@@ -18,6 +18,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -30,7 +31,7 @@ import java.util.Locale;
 
 public class Exercise_Area extends AppCompatActivity {
     private TextView tvexercisename,tvcountdown;
-    private ImageView play,pause,backtoexercise;
+    private ImageView next,previous,pause,backtoexercise;
     private CountDownTimer countDownTimer;
     private long starttime_in_millis = 6000;
     private long time_left = starttime_in_millis;
@@ -38,6 +39,7 @@ public class Exercise_Area extends AppCompatActivity {
     private MediaPlayer mediaPlayer;
     private boolean done =false;
     private List<exercise_class> exerciseClassList;
+    private  int count =0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +49,8 @@ public class Exercise_Area extends AppCompatActivity {
         tvexercisename = (TextView)findViewById(R.id.exerciseName);
         tvcountdown = (TextView)findViewById(R.id.tvcountdown);
         backtoexercise = (ImageView)findViewById(R.id.backtoexercise);
-        //play = (ImageView)findViewById(R.id.play);
+        next = (ImageView)findViewById(R.id.next);
+        previous = (ImageView)findViewById(R.id.previous);
         pause = (ImageView)findViewById(R.id.pause);
 
         Bundle bundle = getIntent().getExtras();
@@ -83,20 +86,34 @@ public class Exercise_Area extends AppCompatActivity {
             }
         });
 
-//        play.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if (done){
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (done){
+                    //check if size of list is greater than count
+                    if (count<=exerciseClassList.size()){
+                        //get next element
+                        String name = exerciseClassList.get(count).getName();
+                        tvexercisename.setText(name);
+                        time_left = Long.parseLong(exerciseClassList.get(count).getDuration())*1000;
+                        starttime_in_millis=time_left;
+                        startTimer();
+                    }else {
+                        //show this is last element
+                        Snackbar.make(v,"No more exercises",Snackbar.LENGTH_LONG).show();
+                    }
+
+                }else {
+//                    count +=1;
+//                    //get next element
+//                    String name = exerciseClassList.get(count).getName();
+//                    tvexercisename.setText(name);
+//                    time_left = Long.parseLong(exerciseClassList.get(count).getDuration())*1000;
+//                    starttime_in_millis=time_left;
 //                    startTimer();
-//                }
-//                if (timerunning){
-//
-//                }else {
-//                    startTimer();
-//                }
-//
-//            }
-//        });
+                }
+            }
+        });
 
 
         pause.setOnClickListener(new View.OnClickListener() {
@@ -107,7 +124,6 @@ public class Exercise_Area extends AppCompatActivity {
                     countDownTimer.cancel();
                     timerunning = false;
                 }else {
-
                     startTimer();
                 }
 
@@ -121,9 +137,9 @@ public class Exercise_Area extends AppCompatActivity {
             exercise_class data = ds.getValue(exercise_class.class);
             exerciseClassList.add(data);
         }
-        String name = exerciseClassList.get(0).getName();
+        String name = exerciseClassList.get(count).getName();
         tvexercisename.setText(name);
-        time_left = Long.parseLong(exerciseClassList.get(0).getDuration())*1000;
+        time_left = Long.parseLong(exerciseClassList.get(count).getDuration())*1000;
         starttime_in_millis=time_left;
         startTimer();
     }
@@ -140,11 +156,12 @@ public class Exercise_Area extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                Log.d("alarm", "onFinish: I am finised");
                 playSound();
                 pause.setBackgroundResource(R.drawable.ic_baseline_play_circle_outline_24);
                 timerunning=false;
                 time_left = starttime_in_millis;
+                count +=1;
+                done = true;
 
             }
         }.start();
@@ -175,6 +192,18 @@ public class Exercise_Area extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
+        stopPlayer();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        stopPlayer();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
         stopPlayer();
     }
 

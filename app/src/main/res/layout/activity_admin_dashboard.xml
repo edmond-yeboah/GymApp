@@ -44,7 +44,7 @@
             android:layout_height="60dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="18dp"
-            android:src="@drawable/profile"></ImageView>
+            android:src="@drawable/profile" />
 
         <TextView
             android:id="@+id/username"
@@ -56,7 +56,7 @@
             android:fontFamily="@font/roboto_bold"
             android:text=""
             android:textColor="#ffff"
-            android:textSize="22dp"></TextView>
+            android:textSize="22dp" />
 
         <TextView
             android:id="@+id/tel"
@@ -70,7 +70,7 @@
             android:fontFamily="@font/roboto_light"
             android:text="0*** *** ***"
             android:textColor="#ffff"
-            android:textSize="16dp"></TextView>
+            android:textSize="16dp" />
 
 
 <!--        <ImageView-->
@@ -84,90 +84,90 @@
 
     </RelativeLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:orientation="horizontal"
-        android:weightSum="3">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:weightSum="3">-->
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical">-->
 
-            <TextView
-                android:id="@+id/ctotal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="18"
-                android:textColor="#313131"
-                android:textSize="22dp"></TextView>
+<!--            <TextView-->
+<!--                android:id="@+id/ctotal"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:text="18"-->
+<!--                android:textColor="#313131"-->
+<!--                android:textSize="22dp" />-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="Customers"
-                android:textColor="#919191"
-                android:textSize="18dp"></TextView>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:text="Customers"-->
+<!--                android:textColor="#919191"-->
+<!--                android:textSize="18dp" />-->
 
-        </LinearLayout>
+<!--        </LinearLayout>-->
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+<!--&lt;!&ndash;        <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:orientation="vertical">&ndash;&gt;-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="125"
-                android:textColor="#313131"
-                android:textSize="22dp"></TextView>
+<!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="125"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textColor="#313131"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textSize="22dp"></TextView>&ndash;&gt;-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="Revenue"
-                android:textColor="#919191"
-                android:textSize="18dp"></TextView>
+<!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginTop="12dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="Revenue"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textColor="#919191"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textSize="18dp"></TextView>&ndash;&gt;-->
 
-        </LinearLayout>
+<!--&lt;!&ndash;        </LinearLayout>&ndash;&gt;-->
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical">-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="18"
-                android:textColor="#313131"
-                android:textSize="22dp"></TextView>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:text="18"-->
+<!--                android:textColor="#313131"-->
+<!--                android:textSize="22dp"></TextView>-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="Browse"
-                android:textColor="#919191"
-                android:textSize="18dp"></TextView>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:text="Browse"-->
+<!--                android:textColor="#919191"-->
+<!--                android:textSize="18dp"></TextView>-->
 
-        </LinearLayout>
+<!--        </LinearLayout>-->
 
-    </LinearLayout>
+<!--    </LinearLayout>-->
 
     <!--    <TextView-->
     <!--        android:layout_width="wrap_content"-->
@@ -310,70 +310,70 @@
         </ImageView>
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="34dp">
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="34dp">-->
 
-        <ImageView
-            android:id="@+id/icon_sh"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/wallet">
+<!--        <ImageView-->
+<!--            android:id="@+id/icon_sh"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:src="@drawable/wallet">-->
 
-        </ImageView>
+<!--        </ImageView>-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="16dp"
-            android:layout_toRightOf="@id/icon_sh"
-            android:text="Feature"
-            android:textColor="#202020"
-            android:textSize="20dp"></TextView>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_toRightOf="@id/icon_sh"-->
+<!--            android:text="Feature"-->
+<!--            android:textColor="#202020"-->
+<!--            android:textSize="20dp"></TextView>-->
 
-        <ImageView
-            android:layout_width="16dp"
-            android:layout_height="16dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/arrow_dark">
+<!--        <ImageView-->
+<!--            android:layout_width="16dp"-->
+<!--            android:layout_height="16dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:src="@drawable/arrow_dark">-->
 
-        </ImageView>
-    </RelativeLayout>
+<!--        </ImageView>-->
+<!--    </RelativeLayout>-->
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="34dp">
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="34dp">-->
 
-        <ImageView
-            android:id="@+id/icon_ser"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/power">
+<!--        <ImageView-->
+<!--            android:id="@+id/icon_ser"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:src="@drawable/power">-->
 
-        </ImageView>
+<!--        </ImageView>-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="16dp"
-            android:layout_toRightOf="@id/icon_ser"
-            android:text="Feature"
-            android:textColor="#202020"
-            android:textSize="20dp"></TextView>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_toRightOf="@id/icon_ser"-->
+<!--            android:text="Feature"-->
+<!--            android:textColor="#202020"-->
+<!--            android:textSize="20dp"></TextView>-->
 
-        <ImageView
-            android:layout_width="16dp"
-            android:layout_height="16dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/arrow_dark">
+<!--        <ImageView-->
+<!--            android:layout_width="16dp"-->
+<!--            android:layout_height="16dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:src="@drawable/arrow_dark">-->
 
-        </ImageView>
-    </RelativeLayout>
+<!--        </ImageView>-->
+<!--    </RelativeLayout>-->
 
 </LinearLayout>

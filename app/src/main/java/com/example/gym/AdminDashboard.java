@@ -22,35 +22,35 @@ import java.util.List;
 public class AdminDashboard extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private DatabaseReference reference;
-    private List countlist;
-    private TextView ctotal;
+    //private List countlist;
+    //private TextView ctotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_dashboard);
 
-        ctotal = (TextView)findViewById(R.id.ctotal);
-        countlist = new ArrayList();
+        //ctotal = (TextView)findViewById(R.id.ctotal);
+        //countlist = new ArrayList();
 
         //firebase auth get instance
         mAuth = FirebaseAuth.getInstance();
-
-        reference = FirebaseDatabase.getInstance().getReference("user");
-        reference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for (DataSnapshot ds: snapshot.getChildren()){
-                    countlist.add(ds);
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-        ctotal.setText(String.valueOf(countlist.size()));
+//
+//        reference = FirebaseDatabase.getInstance().getReference("user");
+//        reference.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                for (DataSnapshot ds: snapshot.getChildren()){
+//                    countlist.add(ds);
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
+//        ctotal.setText(String.valueOf(countlist.size()));
     }
 
     public void logoutUser(View view) {
