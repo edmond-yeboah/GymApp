@@ -86,7 +86,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Edmond Yeboah - [@your_twitter](https://twitter.com/your_username) - hopefuledi@gmail.com
+Edmond Yeboah - [LinkedIn](linkedin.com/in/edmond-yeboah-74592014b) - hopefuledi@gmail.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
