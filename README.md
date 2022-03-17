@@ -7,7 +7,7 @@ An android app for gym management that allows clients to do workouts that the ad
 
 
 
-![Screenshot_2021-09-14-16-52-04~2](https://user-images.githubusercontent.com/38086894/133303618-f4f315d7-8807-4a17-87eb-d81ee8a1b0ef.png)
+<img src="https://user-images.githubusercontent.com/38086894/133303618-f4f315d7-8807-4a17-87eb-d81ee8a1b0ef.png" width="300" height="500">
 # Login and register 
 
 ![Screenshot_2021-09-14-16-52-21~2](https://user-images.githubusercontent.com/38086894/133303929-6016d5ad-3cbd-42f6-b176-b7343f0e29af.png)
