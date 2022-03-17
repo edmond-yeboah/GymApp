@@ -30,7 +30,7 @@ GymApp An android app for gym management that allows clients to do workouts that
 
 <img src="https://user-images.githubusercontent.com/38086894/133304256-3827a75c-7c87-46bf-91ef-d386b7f8a72e.png" width="250" height="500">
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+
 
 ### Built With
 
@@ -45,7 +45,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -71,7 +71,6 @@ _Below is an example of how you can instruct your audience on installing and set
    const API_KEY = 'ENTER YOUR API';
    ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
@@ -80,18 +79,18 @@ _Below is an example of how you can instruct your audience on installing and set
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+
 
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Edmond Yeboah - [@your_twitter](https://twitter.com/your_username) - hopefuledi@gmail.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+
 
 
 
