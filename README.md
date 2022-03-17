@@ -44,8 +44,8 @@ _To get a local copy up and running on your machine, follow these simple steps._
    ```sh
    git clone https://github.com/mangorepublic/GymApp.git
    ```
-3. Enter your API in `config.js`
-   ```js
+3. Enter your API in `gradle.properties`
+   ```sh
    PSTK_PUBLIC_KEY = 'ENTER YOUR API KEY';
    ```
 
