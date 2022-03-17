@@ -44,13 +44,9 @@ _To get a local copy up and running on your machine, follow these simple steps._
    ```sh
    git clone https://github.com/mangorepublic/GymApp.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
+3. Enter your API in `config.js`
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   PSTK_PUBLIC_KEY = 'ENTER YOUR API KEY';
    ```
 
 
