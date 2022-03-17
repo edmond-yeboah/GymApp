@@ -5,6 +5,9 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
+       <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -43,6 +46,12 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [JQuery](https://jquery.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
