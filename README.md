@@ -2,7 +2,7 @@
 An android app for gym management that allows clients to do workouts that the administrator has added to the app and pay their gym membership price via the PayStack api.
 
 ## Screenshots of the app
-<img src="https://user-images.githubusercontent.com/38086894/133303339-914bf86b-fbff-4e49-93ce-cebe1aba9a12.png" width="250" height="250">
+<img src="https://user-images.githubusercontent.com/38086894/133303339-914bf86b-fbff-4e49-93ce-cebe1aba9a12.png" width="300" height="500">
 # splash screen
 
 
