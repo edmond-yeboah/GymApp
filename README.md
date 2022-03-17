@@ -26,7 +26,7 @@ GymApp is an android app for gym management, it allow clients to do workouts tha
 
 ## Built With
 
-This android mobile application was built with the with the following:
+This android mobile application was built with the following programming language, plugins and libraries:
 
 * [Java](https://www.java.com/en/)
 * [Material UI](https://material.io)
