@@ -90,7 +90,7 @@ public class payment extends AppCompatActivity {
 
     private void initializePaystack() {
         PaystackSdk.initialize(getApplicationContext());
-        PaystackSdk.setPublicKey("pk_test_fc44085d9f9d62457e1596926f2717c26179474c");
+        PaystackSdk.setPublicKey("pk_test_fc44085d9f9d62457e1596974c");
     }
     private void initializeFormVariables(){
         mCardnumber = findViewById(R.id.cardnuber);
